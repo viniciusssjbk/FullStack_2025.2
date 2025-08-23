@@ -81,82 +81,37 @@ body{
 #link1:visited, #link2:visited{
     color: black;
 }
-#pg1{
-    background-color: whitesmoke;
-}
-#pg1 #texto1{
-    text-align: center;
-    font-size: 20px;
-}
-a:visited{
-    color: brown;
-}
-#mapa{
-    height: 150px;
+#tabelaproj{
+    background-color: white;
     width: 100%;
+    border-radius: 3px 3px;
+    
+   
 }
-#pgtitulo{
+#tabela_borda{
+    border: solid gray;
+    box-shadow: 1px 1px 10px black;
     background-color: black;
-}
-#info-pessoal{
-   padding-left: 10px;
-}
-#texto2{
     text-align: center;
+    font-family: sans-serif;
+    margin-left: 40%;
+    border-radius: 10px 10px;
     color: white;
-    text-shadow: 3px 3px 5px black;
+    font-size: 110%;
+    width: 250px;
     
-}
-#pg2{
-    background-color: whitesmoke;
 
 }
-.textos{
-    text-align: center;
-    color: blue;
-    font-size: 30px;
-    text-shadow: 3px 3px 10px lightblue;
+#tabela_borda .titulo{
+    box-shadow: 1px 1px 10px white;
+    cursor:no-drop;
 }
-
-#tabela{
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 80%;
-    text-align: center;
-    color: blue;
-    font-size: 25px;
-    background-color: lightblue;
-    border: solid 5px blue;
-    
+#tabela_borda a:visited{
+    color: darkblue;
 }
-#tabela img{
-    border-radius: 10px 10px;
-    cursor: pointer;
-    opacity: 0.3;
+#tabela_borda a{
+    color: gray;
 }
-#tabela img:hover{
-    height: 200px;
-    width: 200px;
-    box-shadow: 1px 1px 20px black;
-    opacity: 1;
+#tabela_borda .texto{
+    box-shadow: 1px 1px 10px blue;;
 }
-.music{
-    font-size: 20px;
-    text-align: center;
-}
-.music p{
-    font-size: 20px;
-    text-align:left
-}
-iframe{
-    border-radius: 10px 10px;
-}
-div{
-    border-radius: 10px 10px;
-}
-#jogos{
-    margin-left: 10px;
-    font-size: 20px;
-    text-align: justify;
-}
-
