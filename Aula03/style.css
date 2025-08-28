@@ -1,0 +1,62 @@
+.solid{
+    border-style: solid;
+}
+.dotted{
+    border-style: dotted;
+}
+.dashed{
+    border-style: dashed;
+}
+.double{
+    border-style: double;
+}   
+p{
+    border-radius: 20px;
+    box-shadow: 5px 5px grey;
+    display: inline;
+}
+#d1{
+    background-color: aquamarine;
+    width: 300px;
+    height: 200px;
+    border: dotted 5px blue;
+    padding: 50px;
+    margin: 30px;
+}
+#d2{
+    display: inline;
+}
+#s1{
+    display: block;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.inline{
+    display: inline;
+
+}
+.padding{
+    padding: 10px;
+}
+#d3{
+    position: relative;
+    top: 40px;
+    left: 40px;
+
+}
+#d4{
+    position: absolute;
+    top: 15000px;
+    left: 40px;
+}
+.red{
+    background-color: red;
+    bottom: 10px;
+}
+#d5{
+    position: fixed;
+}

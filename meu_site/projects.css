@@ -15,13 +15,16 @@ body{
 #titulo_texto:hover{
     
     .sp1{
-    color: lightblue;
+    color: SteelBlue;
     }
     .sp2{
-    color: blue;
+    color: DodgerBlue;
     }
     .sp3{
-    color: darkblue;
+    color: blue;
+    }
+    .ps4{
+    color: mediumblue;
     }
 }
 
