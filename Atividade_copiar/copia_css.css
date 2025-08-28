@@ -1,0 +1,102 @@
+body{
+    background-color: lightgray;
+}
+#caixa_p1{
+    border: solid darkblue;
+}
+#caixa_p1 img{
+    height: 200px;
+    width: 200px;
+    display: inline;
+}
+#caixa_p1 h1{
+    display: inline;
+    color: darkgreen;
+}
+.cor{
+    background-color: bisque;
+}
+#titulo{
+    position: relative;
+    left: 700px;
+    top: -90px;
+}
+#java{
+    position: relative;
+    left: 1300px;
+    display: inline;
+    
+}
+#menu{
+    background-color: lightskyblue;
+    padding-left: 600px;
+}
+.textocor{
+    display: inline;
+    color: darkred;
+    font-weight: bold;
+    margin-left: 100px;
+    
+}
+#textos{
+    text-align: center;
+}
+#textos p{
+    color: indigo;
+    font-family: sans-serif;
+    font-size: 20pt;
+}
+#textos img{
+    display: inline;
+    margin-left: 90px;
+}
+#book2{
+    width: 420px;
+}
+#textos iframe{
+    margin-left: 90px;
+    height: 300px;
+}
+
+#tabela{
+    border: dashed red;
+    position: absolute;
+    left: 780px;
+}
+#tabela td{
+    border: double red;
+}
+#sites{
+    background-color: yellow;
+    width: 400px;
+    position: relative;
+    top: 120px;
+    left: 740px;
+
+}
+#sites a{
+    color: darkred;
+    position: relative;
+    left: 50px;
+}
+#pgfim{
+    position: relative;
+    top: 200px;
+}
+#pgfim img{
+    height: 100px;
+    width: 100px;
+    display: inline;
+}
+#pgfim p{
+    
+    display: inline;
+    font-family: 'Comic Sans MS';
+    font-size: 15pt;
+    padding-left: 620px;
+    position: relative;
+    top: -50px;
+}
+#css{
+    padding-left: 650px;
+}

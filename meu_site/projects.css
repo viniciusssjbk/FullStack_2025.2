@@ -1,5 +1,5 @@
 body{
-   background-image: url(https://i.gifer.com/origin/1c/1c161055a12c8ca0fbe11a95c606ef17_w200.gif);
+    background-color: LightSkyBlue;
    background-attachment: fixed;
    background-size: cover;
    background-repeat: no-repeat;
@@ -15,30 +15,30 @@ body{
 #titulo_texto:hover{
     
     .sp1{
-    color: SteelBlue;
+    color: Green;
     }
     .sp2{
-    color: DodgerBlue;
+    color: ForestGreen;
     }
     .sp3{
-    color: blue;
+    color: LimeGreen;
     }
     .ps4{
-    color: mediumblue;
+    color: Lime;
     }
 }
 
 
 #title{
     text-align: center;
-    background-color: black;
+    background-color: SteelBlue;
 }
 #title img{
     position: absolute;
     left: 20px;
     border-radius: 10px 10px;
     top: 2.5%;
-    box-shadow: 1px 1px 20px blue;
+    box-shadow: 1px 1px 20px LightSkyBlue;
     
 
 }
@@ -48,7 +48,7 @@ body{
 }
 
 #link1{
-    color: black;
+    color: SteelBlue;
     background-color: white;
     border-radius: 3px 3px;
     height: 18px;
@@ -59,7 +59,7 @@ body{
     opacity: 0.3;
 }
 #link2{
-     color: black;
+     color: SteelBlue;
     background-color: white;
     border-radius: 3px 3px;
     height: 18px;
@@ -82,7 +82,7 @@ body{
     left: 58%;
 }
 #link1:visited, #link2:visited{
-    color: black;
+    color: SteelBlue;
 }
 #tabelaproj{
     background-color: white;
@@ -92,9 +92,9 @@ body{
    
 }
 #tabela_borda{
-    border: solid gray;
-    box-shadow: 1px 1px 10px black;
-    background-color: black;
+    border: solid Lime;
+    box-shadow: 1px 1px 10px LightSkyBlue;
+    background-color: SteelBlue;
     text-align: center;
     font-family: sans-serif;
     margin-left: 40%;
@@ -110,11 +110,11 @@ body{
     cursor:no-drop;
 }
 #tabela_borda a:visited{
-    color: darkblue;
+    color: SteelBlue;
 }
 #tabela_borda a{
-    color: gray;
+    color: Lime;
 }
 #tabela_borda .texto{
-    box-shadow: 1px 1px 10px blue;;
+    box-shadow: 1px 1px 10px LightSkyBlue;
 }
