@@ -15,18 +15,19 @@ body{
 #titulo_texto:hover{
     
     .sp1{
-    color: Green;
+    color: mediumaquamarine;
     }
     .sp2{
-    color: ForestGreen;
+    color: Teal;
     }
     .sp3{
-    color: LimeGreen;
+    color: Aquamarine;
     }
     .ps4{
-    color: Lime;
+    color: Teal;
     }
 }
+
 
 
 #title{
@@ -47,43 +48,7 @@ body{
     cursor: pointer;
 }
 
-#link1{
-    color: SteelBlue;
-    background-color: white;
-    border-radius: 3px 3px;
-    height: 18px;
-    width: 55px;
-    position: absolute;
-    left: 34.5%;
-    font-size:120%;
-    opacity: 0.3;
-}
-#link2{
-     color: SteelBlue;
-    background-color: white;
-    border-radius: 3px 3px;
-    height: 18px;
-    width: 95px;
-    position: absolute;
-    left: 59%;
-    font-size:120%;
-    opacity: 0.3;
-}
-#link1:hover{
-    height: 25px;
-    width: 65px;
-    opacity: 1;
-    left: 33.5%;
-}
-#link2:hover{
-    height: 25px;
-    width: 105px;
-    opacity: 1;
-    left: 58%;
-}
-#link1:visited, #link2:visited{
-    color: SteelBlue;
-}
+
 #tabelaproj{
     background-color: white;
     width: 100%;
@@ -92,8 +57,8 @@ body{
    
 }
 #tabela_borda{
-    border: solid Lime;
-    box-shadow: 1px 1px 10px LightSkyBlue;
+    border: solid teal;
+    box-shadow: 1px 5px 10px teal;
     background-color: SteelBlue;
     text-align: center;
     font-family: sans-serif;
@@ -106,15 +71,52 @@ body{
 
 }
 #tabela_borda .titulo{
-    box-shadow: 1px 1px 10px white;
+    box-shadow: 1px 1px 10px  rgb(2, 88, 163);
+    border-radius: 0px 0px 10px 10px;
     cursor:no-drop;
+    color: MediumTurquoise;
 }
 #tabela_borda a:visited{
-    color: SteelBlue;
+    color: lime;
 }
 #tabela_borda a{
-    color: Lime;
+    color: lime;
 }
 #tabela_borda .texto{
-    box-shadow: 1px 1px 10px LightSkyBlue;
+    box-shadow: 1px 2px 5px  CadetBlue;
+    border-radius: 0px 0px 10px 0px;
+}
+#caixa_link{
+    position: fixed;
+    bottom: 10px;
+    left: 90%;
+    background-color: MidnightBlue;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    border-radius: 10px 10px;
+    
+}
+#link1{
+    color: cadetblue;
+    border-radius: 3px 3px;
+    font-size:120%;
+    display: inline;
+    position: relative;
+    top: 10%;
+
+}
+#link2{
+    color: cadetblue;
+    border-radius: 3px 3px;
+    font-size:120%;
+    position: relative;
+    top: 40%;
+    
+    
+    
+}
+
+#link1:visited, #link2:visited{
+    color: cadetblue;
 }
