@@ -1,0 +1,31 @@
+.flex-container{
+    display: flex;
+    background-color: dodgerblue;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px;
+    /* align-content: center; */
+}
+.flex-container div{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+#d5{
+    order: 1;
+    flex-grow: 3;
+}
+#d16{
+    order: -1;
+}
+#d4{
+    flex-grow: 3;
+}
+#d12{
+    align-self: flex-start;
+}
+#d14{
+    align-self: flex-end;
+}
