@@ -1,0 +1,71 @@
+#tela_titulo{
+   display: flex;
+    justify-content: space-around;
+     flex-wrap: wrap;
+    font-size: 130%;
+    color: lightslategrey;
+
+    
+}
+#texto1{
+    background-color: red;
+    height: 25px;
+    width: 55px;
+    padding: 10px;
+    color: white;
+   
+}
+#tela_principal{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#tela_canto1{
+    width: 500px;
+}
+#tela_canto2{
+     display: flex;
+    justify-content: space-between;
+     color: lightslategrey;
+}
+#tela_canto3{
+     display: flex;
+    justify-content: space-around;
+}
+#texto_vermelho{
+    padding-left: 5%;
+    color: red;
+    font-size: 200%;
+}
+#imagens_div{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#carro{
+    display: inline;
+    background-color: red;
+    color: white;
+     
+}
+#baixo_carro{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    padding: 5%;
+}
+#texto_carro{
+    color: rgb(165, 165, 165);
+}
+#mulher1{
+    width: 300px;
+}
+#mulher1 p{
+    color: gray;
+}
+#mulher1 h2{
+    color: red;
+    font-size: 120%;
+}
