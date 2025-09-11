@@ -1,0 +1,114 @@
+
+#titulo{
+    margin-left: 400px;
+}
+#subtitulo{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    align-items: center;
+    text-align: center;
+    font-size: 70%;
+}
+.sub{
+    padding: 10px;
+}
+#imagens1{
+    margin-left: 390px;
+    display: flex;
+    justify-content: start;
+}
+#imagens1 img{
+    border-radius: 5px 5px;
+    height: 115px;
+}
+#textos{
+    display: flex;
+    padding-left: 390px;
+}
+.laranja{
+    color: orange;
+}
+#textos div{
+    padding-left: 10px
+
+}
+h1{
+    margin-left: 400px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: dimgray
+}
+#imagens2{
+    display: flex;
+    margin-left: 370px;
+
+}
+.bloco{
+    border-radius: 10px 10px;
+    box-shadow: 5px 5px 10px gray;
+    height: 180px;
+    width: 140px;
+    margin-left: 30px;
+}
+.bloco p{
+    padding-left: 5px;
+    font-family: cursive;
+}
+.bloco img{
+    margin-left: -5px;
+    border-radius: 10px 10px;
+    height: 109px;
+}
+h2{
+    margin-left: 400px;
+}
+
+
+#receitas{
+    margin-left: 380px;
+    display: flex;
+    flex-direction: column;
+}
+.comidas{
+    display: flex;
+    align-items: center;
+}
+.comidas div{
+    margin-left: 20px;
+}
+.comidas img{
+    border-radius: 5px 5px;
+}
+.subcomidas{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+.comidatexto p{
+    margin-top: -15px;
+}
+.avalicao{
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+   
+
+}
+.avalicao img{
+    margin-left: -35px;
+}
+#final{
+    background-color: lightgray
+}
+#final img{
+    margin-left: 45%;
+}
+#textofim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#textofim div{
+    padding-left: 50px;
+}
+
