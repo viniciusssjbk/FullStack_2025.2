@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 06</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Aula 06</h1>
+    <h2>Exercício 1</h2>
+    <p id="resultado"></p>
+    <h2>Exemplo de input</h2>
+    <input type="text" id="input1" onchange="exibirMensagem(document.getElementById('input1').value)"/>
+    <input type="button" id="btn1" value="butão" />
+    <h2>Exercício 02</h2>
+    <input type="number" id="input2" onchange="lista(document.getElementById('input2').value)"/> 
+    <p id="resultado1"></p>
+
+    <h2>Exercício 03</h2>
+    <input type="text" id="NUMERO1">
+    <input type="text" id="NUMERO2">
+    <input type="button" value="somar" onclick="somar()"/>
+    <p id="resultado2"></p>
+
+
+
+    <h2>Exercício 04</h2>
+    <input type="text" id="calculo1">
+    <input type="text" id="calculo2">
+    <br><br>
+    <div id="calculo" onmousemove="calculo(parseInt(document.getElementById('calculo1').value), parseInt(document.getElementById('calculo2').value))"></div>
+
+    <script src="scripy.js"></script>
+</body>
+</html>
