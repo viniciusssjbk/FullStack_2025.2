@@ -51,7 +51,7 @@ contexto.closePath();
 
 
 
-
+/*DESENHO ABSTRATO*/
 
 
 quadrado(ctx,2,'blue','blue',0,0,50,50,0,0,50,50)
@@ -72,5 +72,17 @@ quadrado(ctx,2,'white','black',0,0,0,0,0,0,300,300)
 circle(ctx,2,'yellow','green',80,230,15,0,2)
 circle(ctx,2,'yellow','green',210,230,15,0,2)
 circle(ctx,2,'aquamarine','blue',150,110,15,0,2)
-circle(ctx,2,'white','green',100,150,45,1,1.5)
+circle(ctx,2,'white','green',135,150,65,1,1.3)
+circle(ctx,2,'white','green',148,150,79,1.76,2)
+circle(ctx,2,'white','green',148,150,79,1.76,2)
+circle(ctx,2,'white','green',150,299,55,1.5,2)
+circle(ctx,2,'white','green',150,299,70,1,1.5)
+circle(ctx,2,'aquamarine','green',150,299,40,1,2)
 
+/*DESENHO CASA*/
+circle(ctx2,2,'yellow','yellow',220,70,35,0,2)
+triangulo(ctx2, 2, 'OrangeRed','OrangeRed',110,150,190,150,150,110,110,150)
+quadrado(ctx2,2,'chocolate','chocolate',110,150,80,90,110,150,80,90)
+quadrado(ctx2,2,'lightblue','lightblue',115,160,25,25,115,160,25,25)
+quadrado(ctx2,2,'lightblue','lightblue',160,160,25,25,160,160,25,25)
+quadrado(ctx2,2,'SaddleBrown','SaddleBrown',140,186,20,54,140,186,20,54)
