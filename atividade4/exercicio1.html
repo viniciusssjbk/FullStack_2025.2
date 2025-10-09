@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <script>
+        var nota1 = parseFloat(window.prompt("Escreva a nota do trabalho de laboratorio:"));
+        var nota2 = parseFloat(window.prompt("Escreva a nota da Avaliação semestral:"));
+        var nota3 = parseFloat(window.prompt("Escreva a nota Exame final:"));
+        media = (((nota1*2)+(nota2*3)+(nota3*5))/10)
+        if (media >= 8 && media <= 10){
+            console.log("conceito: A")
+        }
+        else if (media >= 7 && media <= 8){
+            console.log("conceito: B")
+        }
+        else if (media >= 6 && media <= 7){
+            console.log("conceito: C")
+        }
+        else if (media >= 5 && media <= 6){
+            console.log("conceito: D")
+        }
+        else if (media >= 0 && media <= 5){
+            console.log("conceito: E")
+        }
+    </script>
+</body>
+</html>

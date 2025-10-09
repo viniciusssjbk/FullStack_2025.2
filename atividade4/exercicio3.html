@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>exercicio 3</title>
+</head>
+<body>
+    <script>
+        altura = parseFloat(window.prompt("Digite a sua altura:"));
+        peso = parseInt(window.prompt("Digite a seu peso:"));
+        if (peso <=60){
+            if(altura <=1.20){
+                console.log("A")
+            }else if(altura <=1.70 && altura >= 1.21){
+                console.log("B")
+            }else if(altura >= 1.71){
+                console.log("C")
+            }
+        }else if(peso <= 90 && peso >= 61){
+            if(altura <=1.20){
+                console.log("D")
+            }else if(altura <=1.70 && altura >= 1.21){
+                console.log("E")
+            }else if(altura >= 1.71){
+                console.log("F")
+            }
+
+        }
+        else if(peso >= 91){
+            if(altura <=1.20){
+                console.log("G")
+            }else if(altura <=1.70 && altura >= 1.21){
+                console.log("H")
+            }else if(altura >= 1.71){
+                console.log("I")
+            }
+        }
+    </script>
+</body>
+</html>

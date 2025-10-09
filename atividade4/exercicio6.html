@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <script>
+        var soma = 0;
+        var contar = 0;
+        var numero_maior = 0;
+        var numero_menor = 0;
+        var par = 0;
+        var quantpar = 0;
+        var quantimpar = 0;
+        while(true){
+            x = window.prompt("Digite um numero:(para sair escreva 'sair')");
+            if (x=="sair"){
+                break;
+            }else{
+                x = parseInt(x);
+                soma += x;
+                if(contar==0){
+                    numero_maior = x;
+                    numero_menor = x;
+                }
+                else{
+                    if(numero_maior<=x){
+                        numero_maior = x;
+                    }else if(numero_menor>=x){
+                        numero_menor = x;
+                    }
+
+                }
+                if(x%2==0){
+                    par += x;
+                    quantpar +=1;
+                }else{
+                    quantimpar +=1;
+                }
+                contar += 1;
+
+                
+
+            }
+        }
+        var media = soma/contar;
+        var mediapar = par/quantpar;
+        var porcentagem = (quantimpar/contar)*100
+        console.log("A soma é: "+ soma);
+        console.log("A quantidade foi : "+ contar);
+        console.log("A media foi: "+ media);
+        console.log("O maior numero foi: "+ numero_maior);
+        console.log("O menor numero foi: "+ numero_menor);
+        console.log("A media dos numeros pares foi: "+ mediapar);
+        console.log("A quantidade de impares foi de: "+ porcentagem+"%");
+
+    </script>
+</body>
+</html>

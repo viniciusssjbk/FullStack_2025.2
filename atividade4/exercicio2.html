@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <script>
+        var i = parseInt(window.prompt("Valor de I:"));
+        var valor1 = parseFloat(window.prompt("Valor de A:"))
+        var valor2 = parseFloat(window.prompt("Valor de B:"))
+        var valor3 = parseFloat(window.prompt("Valor de C:"))
+        if(i==1 || i==2 || i==3){
+            if(i==1){
+                maior(valor1,valor2,valor3)
+            }else if(i==2){
+                menor(valor1,valor2,valor3)
+            }else{
+                maiorentre(valor1,valor2,valor3)
+            }
+        }
+        else{
+            console.log("VALOR DE I NAO É 1 ou 2 ou 3 @#@$#@$!#$@#!$@#$!#@$!#$@#$!# ERROO#@#@#@#")
+        }
+
+
+
+
+        function maior(a,b,c){
+            if (a <= b && b <= c){ console.log(a+", "+b+", "+c)}
+            else if (a <= c && c <= b){ console.log(a+", "+c+", "+b)}
+            else if (b <= a && a <= c){ console.log(b+", "+a+", "+c)}
+            else if (b <= c && c <= a){ console.log(b+", "+c+", "+a)}
+            else if (c <= a && a <= b){ console.log(c+", "+a+", "+b)}
+            else if (c <= b && b <= a){ console.log(c+", "+b+", "+a)}
+        }
+        function menor(a,b,c){
+            if (a >= b && b >= c){ console.log(a+", "+b+", "+c)}
+            else if (a >= c && c >= b){ console.log(a+", "+c+", "+b)}
+            else if (b >= a && a >= c){ console.log(b+", "+a+", "+c)}
+            else if (b >= c && c >= a){ console.log(b+", "+c+", "+a)}
+            else if (c >= a && a >= b){ console.log(c+", "+a+", "+b)}
+            else if (c >= b && b >= a){ console.log(c+", "+b+", "+a)}
+        }
+        function maiorentre(a,b,c){
+            if (a >= b && a >= c){ console.log("O maior é :"+ a)}
+            else if (b >= a && b >= c){ console.log("O maior é :"+ b)}
+            else if (c >= a && c >= b){ console.log("O maior é :"+ c)}
+        }
+
+    </script>
+</body>
+</html>

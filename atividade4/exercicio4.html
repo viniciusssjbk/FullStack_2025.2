@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio 4</title>
+</head>
+<body>
+    <script>
+        var alunos; 
+        for (var i = 1; i < 7; i++) {
+            nota1 = parseFloat(window.prompt("Nota 1 do "+i+"º aluno:"))
+            nota2 = parseFloat(window.prompt("Nota 2 do "+i+"º aluno:"))
+            media = (nota1+nota2)/2
+            if(media <= 3){
+                alunos += "aluno "+i+": Reprovado\n"
+            }
+            else if(media >= 4 && media <=7){
+                alunos += "Aluno "+i+": Exame\n"
+            }
+            else if(media >= 8){
+                alunos += "Aluno "+i+": Aprovado\n"
+            }
+            
+        }
+        console.log(alunos)
+    </script>
+</body>
+</html>
