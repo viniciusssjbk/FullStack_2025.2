@@ -1,0 +1,10 @@
+body{
+    background-color: aquamarine;
+}
+#caixa{
+    display: flex;
+    justify-content: center;
+}
+#canvas{
+    background-color: white;
+}
