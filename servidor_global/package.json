@@ -1,0 +1,14 @@
+{
+  "name": "servidor_global",
+  "version": "1.0.0",
+  "description": "servidor simples",
+  "main": "servidor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "viniciusssjbk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
