@@ -13,6 +13,6 @@ servidor.listen(80);
 console.log("Servidor rodando.......");
 
 app.get('/', function(req, res){
-    res.redirect("meu_site");
+    res.redirect("meu_site/projects.html");
     
 });
