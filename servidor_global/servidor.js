@@ -58,7 +58,17 @@ app.post("/cadastrar_usuario", function(req, resp) {
 
 
 
+app.get("/cadastrar", function(req, resp) {
+    resp.redirect("/atividade_template/cadastro.html");
+});
+app.post("/usuario_cad_status", function(req, resp) {
+    resp.render('resposta', {status: "cadastrado com sucesso!", nome: req.body.nome, telefone: req.body.telefone, email: req.body.email, senha: req.body.senha})
+});
 
 
-
-
+app.post("/usuario_login_status", function(req, resp) {
+    resp.render('resposta2', {status: "logado com sucesso!", email: req.body.email, senha: req.body.senha})
+});
+app.get("/login", function(req, resp) {
+    resp.redirect("/atividade_template/login.html");
+});
