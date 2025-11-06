@@ -4,21 +4,22 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="cadastro.css">
 </head>
+
 <body>
     <br><br><br><br><br><br>
     <div id="caixa_login">
     <h1>Faça seu cadastro</h1>
-    <form action="">
+    <form action="/cadastrar" method="get">
         <p>Nome:</p>
-        <input type="text" id="nome"><br>
+        <input type="text" id="nome" class="caixa"><br>
          <p>Telefone:</p>
-        <input type="text" id="telefone"><br>
+        <input type="text" id="telefone" class="caixa"><br>
          <p>Email:</p>
-        <input type="email" id="email"><br>
+        <input type="email" id="email" class="caixa"><br>
          <p>Senha:</p>
-        <input type="password" id="senha"><br>
+        <input type="password" id="senha" class="caixa"><br>
          <p>Confirmar senha:</p>
-        <input type="password" id="confirmar_senha"><br>
+        <input type="password" id="confirmar_senha" class="caixa"><br>
         <input type="submit" value="Cadastrar" id="botao_login"><br>
         <p id="link">Já tem uma conta? <a href="login.html">Faça login</a></p>
     </form>

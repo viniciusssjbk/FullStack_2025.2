@@ -9,12 +9,12 @@ body {
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: #e1dbfa;
+    background-color: #3d787c;
 }
 
 #caixa_login h1 {
     text-align: center;
-    color: #3d787c;
+    color: #e1dbfa;
 }
 
 #caixa_login form {
@@ -24,10 +24,10 @@ body {
 
 #caixa_login form p {
     margin: 5px 0;
-    color: #3d787c;
+    color: #e1dbfa;
 }
 
-#email, #senha {
+.caixa {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -38,20 +38,20 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #5cb2b8;
+    background-color: #534a77;
     color: white;
     cursor: pointer;
 }
 
 #botao_login:hover {
-    background-color: #3d787c;
+    background-color: #aba1d3;
 }
 #link {
     text-align: center;
     margin-top: 10px;
 }
 #link a {
-    color: #337ab7;
+    color: #98bad8;
     text-decoration: none;
 }
 #link a:hover {
