@@ -3,31 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login - cadastro</title>
+    <title>login - cadastro - atualizar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>CADASTRAR</h1>
     <form action="/cadastrar_usuario" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
         <br>
-        <label for="login">Login:</label>
+        <label >Login:</label>
         <input type="text" id="login" name="login" required>
         <br>
-        <label for="senha">Senha:</label>
+        <label >Senha:</label>
         <input type="password" id="senha" name="senha" required>
         <br>
         <input type="submit" value="Cadastrar">
     </form>
     <br><br><br>
+    <h1>LOGAR</h1>
     <form action="/login_usuario" method="post">
-        <label for="login">Login:</label>
+        <label >Login:</label>
         <input type="text" id="login" name="login" required>
         <br>
-        <label for="senha">Senha:</label>
+        <label >Senha:</label>
         <input type="password" id="senha" name="senha" required>
         <br>
         <input type="submit" value="entrar">
     </form>
+    <br><br><br>
+    <h1>ATUALIZAR</h1>
+    <form action="/atualizar_usuario" method="POST">
+        <label>Login:</label><br>
+        <input type="text" name="login" required><br><br>
+
+        <label>Senha:</label><br>
+        <input type="password"  name="senha" required><br><br>
+
+        <label>Nova Senha:</label><br>
+        <input type="password"  name="nova_senha" required><br><br>
+        <input type="submit" value="Atualizar Senha">
+        </form>
+     <br><br><br>
+<h1>REMOVER</h1>
+    <form action="/remover_usuario" method="POST">
+        <label>Login:</label><br>
+        <input type="text" name="login" required><br><br>
+
+        <label>Senha:</label><br>
+        <input type="password"  name="senha" ><br><br>
+
+        <input type="submit" value="Remover Usuário">
+        </form>
 </body>
 </html>
