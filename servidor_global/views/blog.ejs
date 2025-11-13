@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <div>
+    <h1>BLOG</h1>
+    <button onclick="window.open('/cadastrar_blog')" style="cursor: pointer;">CRIAR</button>
+   </div>
+  <br><br>
+  <%var i=1; for (var elemento of postagem) { %>
+    <div><h2>Postagem <%=i%></h2><p><%= elemento.bd_titulo %></p>
+        <p><%= elemento.bd_resumo %></p>
+    <p><%= elemento.bd_conteudo %></p></div><br><br>
+  <% i++;} %>
+
+
+
+</body>
+<style>
+    body{
+        background: linear-gradient(to left, rgb(2, 2, 3), rgb(78, 77, 83));
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to right, rgb(2, 2, 3), rgb(63, 54, 112));
+        border-radius: 10px;
+    }
+    h1,h2{
+        color: white;
+        text-align: center;
+    }
+    p{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-family: fantasy;
+    }
+</style>
+</html>

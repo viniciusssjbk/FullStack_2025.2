@@ -4,7 +4,7 @@ var  app = express();
 var mongodb = require("mongodb");
 
 const MongoClient = mongodb.MongoClient;
-const uri = `mongodb://localhost:27017`;
+const uri = `mongodb+srv://viniciusssjbk:Celtapreto01@cluster0.j4u2oxb.mongodb.net/?appName=Cluster0`;
 const client = new MongoClient(uri, { useNewUrlParser: true });
 /*metodo post*/ 
 let bodyParser = require("body-parser")
@@ -71,4 +71,41 @@ app.post("/usuario_login_status", function(req, resp) {
 });
 app.get("/login", function(req, resp) {
     resp.redirect("/atividade_template/login.html");
+});
+
+
+
+
+
+
+var postagem = dbo.collection("blog");
+
+
+
+
+app.get("/blog", function(req, resp) {
+ 
+    postagem.find({}).toArray(function(err, items) {
+      console.log(items);
+      resp.render('blog', {postagem: items})
+       
+    });
+
+
+  });
+app.get("/cadastrar_blog", function(req, resp) {
+    resp.redirect("/blog/cadastrar_post.html");
+});
+
+
+app.post("/criando_post", function(req, resp) {
+    var post = {bd_titulo: req.body.titulo, bd_resumo: req.body.resumo, bd_conteudo: req.body.conteudo};
+    postagem.insertOne(post, function (err) {
+      if (err) {
+        resp.render('poste_criado', {resposta: "Erro ao cadastrar a postagem!"})
+      }else {
+        resp.render('poste_criado', {resposta: "postagem cadastrada com sucesso"})        
+      };
+    }); 
+
 });
