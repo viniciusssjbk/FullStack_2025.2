@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fundoc.gif');
+    margin: 0;
+    padding: 0;
+}
+#caixa_login {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3d787c;
+}
+
+#caixa_login h1 {
+    text-align: center;
+    color: #e1dbfa;
+}
+
+#caixa_login form {
+    display: flex;
+    flex-direction: column;
+}
+
+#caixa_login form p {
+    margin: 5px 0;
+    color: #e1dbfa;
+}
+
+.caixa {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#botao_login {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #534a77;
+    color: white;
+    cursor: pointer;
+}
+
+#botao_login:hover {
+    background-color: #aba1d3;
+}
+#link {
+    text-align: center;
+    margin-top: 10px;
+}
+#link a {
+    color: #98bad8;
+    text-decoration: none;
+}
+#link a:hover {
+    text-decoration: underline;
+}

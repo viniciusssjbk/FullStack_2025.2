@@ -7,7 +7,8 @@ const MongoClient = mongodb.MongoClient;
 const uri = `mongodb+srv://viniciusssjbk:Celtapreto01@cluster0.j4u2oxb.mongodb.net/?appName=Cluster0`;
 const client = new MongoClient(uri, { useNewUrlParser: true });
 /*metodo post*/ 
-let bodyParser = require("body-parser")
+let bodyParser = require("body-parser");
+const { url } = require('inspector');
 app.use(bodyParser.urlencoded({extended: false }))
 app.use(bodyParser.json())
 
@@ -143,4 +144,145 @@ app.post("/atualizar_usuario", function(req, resp) {
 
   });
 
+
+
+var carro_usuario = dbo.collection("carro");
+
+
+  /*cadastro de usuario carro */
+app.post("/usuario_cad_carro", function(req, resp) {
+
+  var usuario = {
+    usuario: req.body.nome,
+    telefone: req.body.telefone,
+    email: req.body.email,
+    senha: req.body.senha
+  };
+
+  carro_usuario.insertOne(usuario, function (err) {
+    if (err) {
+      resp.render('erro_carro', {resposta: "Erro ao cadastrar o usuario!"});
+    } else {
+      resp.redirect("/carros/login.html");
+    }
+  });
+});
+
+app.post("/usuario_login_carro", function(req, resp) {
+
+  var usuario = {
+    email: req.body.email,
+    senha: req.body.senha
+  };
+
+  carro_usuario.findOne({ email: usuario.email, senha: usuario.senha }, function(err, user) {
+
+    if (err || !user) {
+      resp.render('erro_carro', {resposta: "Usuario não encontrado"});
+    } else {
+      resp.redirect("/carros/menu.html");
+    }
+  });
+
+});
+
+
+/*Cadastro para carros */
+
+var carro = dbo.collection("carro2");
+
+
+
+app.post("/cadastrar_carro", function(req, resp) {
+
+  var carrinho = {
+    modelo: req.body.modelo,
+    ano: req.body.ano,
+    preco: req.body.preco,
+     quant: req.body.quant,
+  };
+
+  carro.insertOne(carrinho, function (err) {
+    if (err) {
+      resp.render('erro_carro', {resposta: "Erro ao cadastrar o carro!"});
+    } else {
+      resp.redirect("/carros/menu.html");
+    }
+  });
+});
+
+app.post("/atualizar_carro", function(req, resp) {
+    var carrinho = { modelo: req.body.modelo, ano: req.body.ano };
+    var novocarrinho = { $set: {preco: req.body.preco, quant: req.body.quant} };
+
+    carro.updateOne(carrinho, novocarrinho, function (err, result) {
+      console.log(result);
+      if (result.modifiedCount == 0) {
+        resp.render('erro_carro', {resposta: "Carro não encontrado!"})
+      }else if (err) {
+        resp.render('erro_carro', {resposta: "Erro ao atualizar o carro!"})
+      }else {
+       resp.redirect("/carros/menu.html");       
+      };
+    });
+   
+  });
+
+  app.post("/remover_carro", function(req, resp) {
+    var carrinho = { modelo: req.body.modelo, ano: req.body.ano };
+   
+    carro.deleteOne(carrinho, function (err, result) {
+      console.log(result);
+      if (result.deletedCount == 0) {
+        resp.render('erro_carro', {resposta: "Carro não encontrado!"})
+      }else if (err) {
+        resp.render('erro_carro', {resposta: "Erro ao remover o carro!"})
+      }else {
+        resp.redirect("/carros/menu.html");      
+      };
+    });
+
+  });
+  app.get("/vender",function(req,res){
+
+     carro.find({}).toArray(function(err, items) {
+      console.log(items);
+      res.render('vender', {carro: items})
+     });
+  
+  })
+
+
+
+  app.post("/comprar", function (req, res) {
+
+  var carrinho = {
+    modelo: req.body.modelo,
+    ano: req.body.ano
+  };
+  console.log(carrinho);
+
+ 
+  carro.findOne({ modelo: carrinho.modelo, ano: carrinho.ano }, function (err, user) {
+
+
+    if (err || !user) {
+      return res.render("erro_carro", { resposta: "Carro não encontrado." });
+    }
+
+    if (user.quant === 0) {
+      return res.render("erro_carro", { resposta: "Infelizmente esse carro está esgotado." });
+    }
+    var quantnova = user.quant - 1;
+
+  
+    carro.updateOne(
+      { modelo: carrinho.modelo, ano: carrinho.ano },
+      { $set: { quant: quantnova } },
+      function (err, result) {
+        res.redirect("/vender");
+      }
+    );
+  });
+});
 

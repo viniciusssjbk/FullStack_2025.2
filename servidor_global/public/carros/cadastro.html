@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <br><br><br><br><br><br>
+    <div id="caixa_login">
+    <h1>Faça seu cadastro</h1>
+    <form action="/usuario_cad_carro" method="post">
+        <p>Nome:</p>
+        <input type="text" id="nome" class="caixa" name="nome" required><br>
+         <p>Telefone:</p>
+        <input type="text" id="telefone" class="caixa" name="telefone" required><br>
+         <p>Email:</p>
+        <input type="email" id="email" class="caixa" name="email" required><br>
+         <p>Senha:</p>
+        <input type="password" id="senha" class="caixa" name="senha" required><br>
+         <p>Confirmar senha:</p>
+        <input type="password" id="confirmar_senha" class="caixa" name="confirmar_senha" required><br>
+        <input type="submit" value="Cadastrar" id="botao_login"><br>
+        <p id="link">Já tem uma conta? <a href="/carros/login.html">Faça login</a></p>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vender - Carro</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #190022, #3d0066);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #e3baff;
+}
+
+.carros-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.carro-item {
+    background: #29003d;
+    padding: 20px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #8a2be2;
+    transition: transform 0.2s;
+}
+
+.carro-item:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #d19fff;
+}
+
+p {
+    margin: 6px 0;
+}
+
+.sumir{
+    opacity: 0;
+}
+.btn {
+    display: block;              /* Faz virar bloco para centralizar */
+    margin: 20px auto;           /* Centraliza no meio */
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #7a00cc, #b066ff);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 12px #b066ff;
+}
+
+.btn:hover {
+    transform: scale(1.07);
+    background: linear-gradient(135deg, #8f1aff, #c68aff);
+    box-shadow: 0 0 15px #d9a6ff;
+}
+
+
+</style>
+<body>
+    <h1>Vender Carro</h1>
+
+    <div class="carros-box">
+        <% 
+        if(carro.length==0){
+            %><h1>Nenhum Carro foi cadastrado</h1><%
+        }
+        else{
+        for (var carrinho of carro) {%>
+              <form action="/comprar" method="POST"> 
+            <div class="carro-item">
+                <h2><%= carrinho.modelo %> - <%= carrinho.ano %></h2>
+                <p>Preço: R$ <%= carrinho.preco %></p>
+                <p>
+                    Quantidade:
+                    <%if(carrinho.quant==0){%>
+                        Esgotado<%}
+                        else{%>
+                            <%=carrinho.quant%>
+                            <%}%>
+                </p>  
+
+ 
+                   
+                        <input type="text" value="<%=carrinho.modelo%>" name="modelo"class="sumir">
+                        <input type="text" value="<%=carrinho.ano%>" name="ano"class="sumir"><br>
+                        <input type="submit"  value="Vender" class="btn">
+                   
+              
+            </div>
+              </form>
+        <% } 
+   }%>
+    </div>
+    
+</body>
+</html>

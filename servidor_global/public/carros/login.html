@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <div id="caixa_login">
+    <h1>Faça seu login</h1>
+    <form action="/usuario_login_carro" method="post">
+        <p>Email:</p>
+        <input type="email" id="email" name="email" required><br>
+        <p>Senha:</p>
+        <input type="password" id="senha" name="senha" required><br>
+        <input type="submit" value="Entrar" id="botao_login"><br>
+        <p id="link">Não tem uma conta? <a href="/carros/cadastro.html">Cadastre-se</a></p>
+    </form>
+    </div>
+</body>
+</html>
